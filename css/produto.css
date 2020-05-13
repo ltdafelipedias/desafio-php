@@ -1,0 +1,79 @@
+#form-produto {
+    min-width: 440px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #E6E6E6;
+    color: black;
+}
+
+#form-produto label{
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+#form-produto input {
+    display: block;
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+    margin-top:10px;
+}
+
+#form-produto label img{
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+}
+
+#form-produto label div{
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+#form-produto label input[type=file]{
+    display: none;
+}
+
+#form-produto .botao{
+    display: flex;
+    margin-right: 10px;
+}
+
+#form-produto .botao button[type=submit]{
+    flex-grow: 1;
+    margin-right: 20px;
+}
+
+@media(min-width:500px){
+    #form-produto{
+        width:480px;
+        margin: calc((100vw - 480px) / 10) auto;
+    }
+    #form-produto{
+        width:800px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #form-produto label{
+        width: calc((100% - 20px) / 2);
+    }
+
+    #form-produto .botao{
+        width: calc((100% - 20px) / 2);
+        align-items: flex-end;
+    }
+
+    #form-produto label:last-of-type{
+        margin-bottom: 0px;
+    }
+}
+
